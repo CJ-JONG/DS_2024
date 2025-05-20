@@ -1,5 +1,7 @@
 package main;
 
+import java.util.List;
+
 public class BinaryTree<Key extends Comparable<Key>> {
 
     private final Node<Key> root;
@@ -40,6 +42,7 @@ public class BinaryTree<Key extends Comparable<Key>> {
         return (isEqual(node1.getLeft(), node2.getLeft()) &&
                 isEqual(node1.getRight(), node2.getRight()));
     }
+
 
     public boolean isEmpty() {
         return root == null;
